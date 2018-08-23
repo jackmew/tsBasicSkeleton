@@ -24,3 +24,21 @@ var car = "BMW";
 console.log(car);
 car = { brand: "BMW", series: 3 };
 console.log(car.brand);
+// function - return type
+function getMyName() {
+    return myName;
+}
+// function - void
+function sayHello() {
+    console.log("hello");
+}
+// function - argument types
+function multiply(value1, value2) {
+    return value1 * value2;
+}
+console.log(multiply(3, 7));
+// function types
+var myMultiply;
+myMultiply = sayHello;
+myMultiply = multiply;
+console.log(myMultiply(5, 2));
