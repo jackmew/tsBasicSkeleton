@@ -21,3 +21,16 @@ var greet = function (friend) {
     console.log("Hello " + friend);
 };
 greet("Zest");
+// Default Parameters
+console.log("-- Default Parameters --");
+var countDown = function (start, end) {
+    if (start === void 0) { start = 10; }
+    if (end === void 0) { end = start - 5; }
+    console.log("start: " + start);
+    console.log("end: " + end);
+    while (start > 0) {
+        start--;
+    }
+    console.log("Done!", start);
+};
+countDown();

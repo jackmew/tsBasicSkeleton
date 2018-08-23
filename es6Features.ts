@@ -23,3 +23,14 @@ const greet = (friend: string) => {
   console.log(`Hello ${friend}`);
 };
 greet("Zest");
+// Default Parameters
+console.log("-- Default Parameters --");
+const countDown = (start: number = 10, end: number = start - 5): void => {
+  console.log(`start: ${start}`);
+  console.log(`end: ${end}`);
+  while (start > 0) {
+    start--;
+  }
+  console.log("Done!", start);
+};
+countDown();
