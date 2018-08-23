@@ -70,9 +70,31 @@ let complexObject1: TComplex = {
   }
 };
 let complexObject2: TComplex = {
-  data: [100, 3.99, 10],
+  data: [20, 2.97, 22],
 
   output: function(all: boolean): number[] {
     return this.data;
   }
 };
+
+// union types
+let myRealRealAge: number | string = 27;
+myRealRealAge = "27";
+// myRealRealAge = false
+
+// check types
+let finalValue = 30;
+if (typeof finalValue === "number") {
+  console.log("Final value is a number");
+}
+
+// never
+function neverReturns(): never {
+  throw new Error("An error!");
+}
+
+// Nullable Types
+let canBeNull: number | null = 12;
+canBeNull = null;
+let canThisBeNull: number | null = null;
+canThisBeNull = 12;

@@ -47,13 +47,34 @@ var userData = {
     name: "Max",
     age: 27
 };
-// userData = null;
-// userData.name = null;
-// userData.age = null;
 // complex object
-var complex = {
+var complexObject1 = {
     data: [100, 3.99, 10],
     output: function (all) {
         return this.data;
     }
 };
+var complexObject2 = {
+    data: [20, 2.97, 22],
+    output: function (all) {
+        return this.data;
+    }
+};
+// union types
+var myRealRealAge = 27;
+myRealRealAge = "27";
+// myRealRealAge = false
+// check types
+var finalValue = 30;
+if (typeof finalValue === "number") {
+    console.log("Final value is a number");
+}
+// never
+function neverReturns() {
+    throw new Error("An error!");
+}
+// Nullable Types
+var canBeNull = 12;
+canBeNull = null;
+var canThisBeNull = null;
+canThisBeNull = 12;
