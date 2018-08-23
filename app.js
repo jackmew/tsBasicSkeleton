@@ -39,6 +39,21 @@ function multiply(value1, value2) {
 console.log(multiply(3, 7));
 // function types
 var myMultiply;
-myMultiply = sayHello;
+// myMultiply = sayHello;
 myMultiply = multiply;
 console.log(myMultiply(5, 2));
+// objects
+var userData = {
+    name: "Max",
+    age: 27
+};
+// userData = null;
+// userData.name = null;
+// userData.age = null;
+// complex object
+var complex = {
+    data: [100, 3.99, 10],
+    output: function (all) {
+        return this.data;
+    }
+};

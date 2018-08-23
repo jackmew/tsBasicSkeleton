@@ -50,3 +50,29 @@ let myMultiply: (a: number, b: number) => number;
 // myMultiply = sayHello;
 myMultiply = multiply;
 console.log(myMultiply(5, 2));
+
+// objects
+let userData: { name: string; age: number } = {
+  name: "Max",
+  age: 27
+};
+// userData = null;
+// userData.name = null;
+// userData.age = null;
+
+type TComplex = { data: number[]; output: (all: boolean) => number[] };
+// complex object
+let complexObject1: TComplex = {
+  data: [100, 3.99, 10],
+
+  output: function(all: boolean): number[] {
+    return this.data;
+  }
+};
+let complexObject2: TComplex = {
+  data: [100, 3.99, 10],
+
+  output: function(all: boolean): number[] {
+    return this.data;
+  }
+};
