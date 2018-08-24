@@ -1,4 +1,3 @@
-"use strict";
 // string
 var myName = "zest";
 // number

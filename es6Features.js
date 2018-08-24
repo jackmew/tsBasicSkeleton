@@ -1,4 +1,3 @@
-"use strict";
 // Block scope
 console.log("-- Block scope --");
 var variable = "First Value";
